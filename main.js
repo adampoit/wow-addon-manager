@@ -38,9 +38,7 @@ var checkAddon = function(addonLink, callback) {
 
         var curseVersionMatch = content.toString().match(versionRegex);
         if (curseVersionMatch == null)
-        {
           versionRegex = ' X-Curse-Packaged-Version: ([a-z0-9\.]+)';
-        }
 
         var curseVersion = content.toString().match(versionRegex)[1];
 
